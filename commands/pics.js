@@ -68,7 +68,7 @@ exports.run = async (bot, message, args) => {
             const embed = new Discord.RichEmbed()
             .setColor('#ffbb00')
             .setTitle(hand[i].title)
-            .attachFile(`./src/pics/${hand[i].img}`)
+            .attachFile(`${picsSRC + hand[i].img}`)
             .setImage(`attachment://${hand[i].img}`);
             
             // Question delayed a little to prevent instant start

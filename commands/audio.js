@@ -96,7 +96,7 @@ exports.run = async (bot, message, args, guild) => {
                     }, 1000)
                     
                     setTimeout(function() {
-                        connection.playFile(`./src/audio/${hand[i].file}`);
+                        connection.playFile(`${audioSRC + hand[i].file}`);
                     }, 1000)
                     
                     // trigger set to wrong answer

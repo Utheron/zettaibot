@@ -1,6 +1,6 @@
 {
   "name": "zettaibot",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "node.js Discord Bot with discord.js module and a Quizz system",
   "main": "index.js",
   "scripts": {

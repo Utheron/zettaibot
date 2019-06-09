@@ -2,7 +2,7 @@
 Name: ZettaiBot
 Author: Utheron
 Description: node.js Discord Bot with discord.js module
-Version: 0.1.4
+Version: 0.1.5
 Licence: GNU General Public Licence v3 or later
 Licence URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: quiz, audio, picture, purge, client events, guild events
@@ -23,10 +23,14 @@ const Enmap         = require('enmap');
 // #############################################
 // # PROJECT RELATED
 // #############################################
+var filesSRC    = './assets';
+var audioSRC    = `${filesSRC}/audio/`;
+var picsSRC     = `${filesSRC}/pics/`;
+
 const configFile    = require('./settings.json');
-const quizzFile     = require('./quizz.json');
-const picsFile      = require('./pics.json');
-const audioFile     = require('./audio.json');
+const quizzFile     = require(`${filesSRC}/quizz.json`);
+const picsFile      = require(`${filesSRC}/pics.json`);
+const audioFile     = require(`${filesSRC}/audio.json`);
 const colorFile     = require('./colorpicker.json');
 // #############################################
 config      = configFile;
@@ -34,6 +38,7 @@ quizz       = quizzFile;
 pics        = picsFile;
 audio       = audioFile;
 color       = colorFile;
+
 regToken    = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 
 // #############################################

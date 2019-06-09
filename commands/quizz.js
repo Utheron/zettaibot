@@ -106,6 +106,7 @@ exports.run = async (bot, message, args) => {
                         return trigger = true;
                     }
                     // If the answer is wrong, do something
+
                 })
                 .catch(e => {
                     // RichEmbed for Time Up
