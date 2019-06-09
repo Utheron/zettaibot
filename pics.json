@@ -1,0 +1,58 @@
+{
+    "1": {
+        "author": "Aaron",
+        "category": "Jeux Vidéo",
+        "name": "Pour les vré-devré !",
+        "questions": [
+            {
+                "title": "De quel jeu est tirée cette image ?",
+                "img": "zettai-pics#006.jpg",
+                "answer": ["Pandemonium"],
+                "full": "Pandemonium",
+                "proof": "https://fr.wikipedia.org/wiki/Pandemonium_(jeu_vid%C3%A9o)"
+            },
+            {
+                "title": "En quelle année est sorti ce jeu ?",
+                "img": "zettai-pics#004.jpg",
+                "answer": ["2004"],
+                "full": "2004",
+                "proof": "https://fr.wikipedia.org/wiki/Dragon_Quest_:_L'Odyss%C3%A9e_du_roi_maudit"
+            },
+            {
+                "title": "Quelle est la série phare de ce studio de développement ?",
+                "img": "zettai-pics#007.png",
+                "answer": ["Gran", "Turismo"],
+                "full": "Gran Turismo",
+                "proof": "https://fr.wikipedia.org/wiki/Gran_Turismo_(s%C3%A9rie)"
+            },
+            {
+                "title": "Quelle actrice prête son physique au personnage Amelie dans Death Stranding",
+                "img": "zettai-pics#002.jpg",
+                "answer": ["Lindsay", "Wagner"],
+                "full": "Lindsay Wagner",
+                "proof": "https://fr.wikipedia.org/wiki/Death_Stranding#Personnages"
+            },
+            {
+                "title": "Qui était en charge du développement de ce jeu ?",
+                "img": "zettai-pics#005.jpg",
+                "answer": ["Hideo", "Kojima"],
+                "full": "Hideo Kojima",
+                "proof": "https://fr.wikipedia.org/wiki/P.T."
+            },
+            {
+                "title": "De quel jeu est tirée cette image ?",
+                "img": "zettai-pics#003.png",
+                "answer": ["Battle Arena", "Toshinden"],
+                "full": "Battle Arena Toshinden",
+                "proof": "https://www.google.com/search?biw=952&bih=876&tbm=isch&sa=1&ei=3Kv7XMC0GJCJlwSCsKvwDA&q=battle+arena+toshinden&oq=battle+arena+toshinden&gs_l=img.3..0l6j0i30l4.8490.10109..10487...0.0..0.69.809.13......0....1..gws-wiz-img.......0i7i30.4s20ZWlRbPQ"
+            },
+            {
+                "title": "De quel jeu est tirée cette image ?",
+                "img": "zettai-pics#001.jpg",
+                "answer": ["13 Sentinels"],
+                "full": "13 Sentinels",
+                "proof": "https://www.google.com/search?biw=952&bih=876&tbm=isch&sa=1&ei=56v7XPG2KYawacWesNAB&q=13+sentinels&oq=13+sentinels&gs_l=img.3..0j0i30l2j0i5i30j0i30j0i24l5.12499.14622..14829...0.0..0.68.791.14......0....1..gws-wiz-img.....0..35i39j0i67j0i8i30.LTPKBIZY2EU"
+            }
+        ]
+    }
+}

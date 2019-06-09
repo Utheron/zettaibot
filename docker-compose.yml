@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  discord:
+    container_name: zettaibot
+    build: .
+    volumes:
+      - .:/usr/src/app
+      - ./src/pics:/usr/src/app/src/pics
+      - /usr/src/app/node_modules
+    ports:
+      - 3000:3000
+      - 9229:9229
+    command: npx nodemon
