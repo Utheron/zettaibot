@@ -12,6 +12,7 @@ const fn        = require('../functions');
 // # CONSTANTS
 // #############################################
 const limit     = config.limit; // Size of the questions pool
+const picsSRC   = './assets/pics/';
 
 exports.run = async (bot, message, args) => {
     
@@ -31,7 +32,7 @@ exports.run = async (bot, message, args) => {
         .setDescription(array)
         .addBlankField()
         .addField(`**Pour lancer un quizz**`, `**!pics** suivit d'un espace et du nombre voulu`, true);
-
+        
         message.channel.send(embed);
         return;
     };

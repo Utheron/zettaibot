@@ -11,7 +11,8 @@ const fn        = require('../functions');
 // #############################################
 // # CONSTANTS
 // #############################################
-const limit     = config.limit; // Size of the questions pool
+const limit    = config.limit; // Size of the questions pool
+const audioSRC = './assets/audio/';
 
 exports.run = async (bot, message, args, guild) => {
     
@@ -29,9 +30,9 @@ exports.run = async (bot, message, args, guild) => {
         .setColor(color.info)
         .setTitle(`**Quizz format *__audio__* **`)
         .setDescription(array)
-        .addBlankField() 
+        .addBlankField()
         .addField(`**Pour lancer un quizz**`, `**!audio** suivit d'un espace et du nombre voulu`, true);
-
+        
         message.channel.send(embed);
         return;
     };
@@ -120,7 +121,7 @@ exports.run = async (bot, message, args, guild) => {
                             
                             if (match) {
                                 // TODO: Delay the end of the audio
-
+                                
                                 // RichEmbed for right answer
                                 const embed = new Discord.RichEmbed()
                                 .setColor(color.right)

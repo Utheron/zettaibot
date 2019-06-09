@@ -21,17 +21,14 @@ const fs            = require('fs');
 const Enmap         = require('enmap');
 
 // #############################################
-// # PROJECT RELATED
+// # CONSTANTS
 // #############################################
-var filesSRC    = './assets';
-var audioSRC    = `${filesSRC}/audio/`;
-var picsSRC     = `${filesSRC}/pics/`;
-
 const configFile    = require('./settings.json');
-const quizzFile     = require(`${filesSRC}/quizz.json`);
-const picsFile      = require(`${filesSRC}/pics.json`);
-const audioFile     = require(`${filesSRC}/audio.json`);
+const quizzFile     = require('./assets/quizz.json');
+const picsFile      = require('./assets/pics.json');
+const audioFile     = require('./assets/audio.json');
 const colorFile     = require('./colorpicker.json');
+
 // #############################################
 config      = configFile;
 quizz       = quizzFile;

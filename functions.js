@@ -1,3 +1,7 @@
+/**
+* @from ZettaiBot
+*/
+
 module.exports = {
     isInteger: function(x) {
         return x % 1 === 0;
