@@ -2,7 +2,7 @@
 Name: ZettaiBot
 Author: Utheron
 Description: node.js Discord Bot with discord.js module
-Version: 0.1.0
+Version: 0.1.4
 Licence: GNU General Public Licence v3 or later
 Licence URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: quiz, audio, picture, purge, client events, guild events
