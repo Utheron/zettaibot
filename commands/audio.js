@@ -119,6 +119,8 @@ exports.run = async (bot, message, args, guild) => {
                             let match = qAnswer.reduce((r,v) => uAnswer.includes(v) && r.concat(v, " ") || r, "")
                             
                             if (match) {
+                                // TODO: Delay the end of the audio
+
                                 // RichEmbed for right answer
                                 const embed = new Discord.RichEmbed()
                                 .setColor(color.right)
