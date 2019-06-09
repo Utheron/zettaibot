@@ -6,7 +6,8 @@ services:
     build: .
     volumes:
       - .:/usr/src/app
-      - ./src/pics:/usr/src/app/src/pics
+      - ./assets/pics:/usr/src/app/assets/pics
+      - ./assets/audio:/usr/src/app/assets/audio
       - /usr/src/app/node_modules
     ports:
       - 3000:3000
