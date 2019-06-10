@@ -31,7 +31,7 @@ exports.run = async (bot, message, args) => {
         .setDescription(array)
         .addBlankField()
         .addField(`**Pour lancer un quizz**`, `**!quizz** suivit d'un espace et du nombre voulu`, true);
-
+        
         message.channel.send(embed);
         return;
     };
@@ -100,13 +100,13 @@ exports.run = async (bot, message, args) => {
                         .setTitle(`**Bravo !**`)
                         .setDescription(`La bonne réponse était **${deck[i].full}**`)
                         .setURL(deck[i].proof)
-                        .setFooter(`${collected.first().author.username}`, message.author.avatarURL);
+                        .setFooter(`${collected.first().author.username}`, collected.first().author.avatarURL);
                         
                         message.channel.send(embed);
                         return trigger = true;
                     }
                     // If the answer is wrong, do something
-
+                    
                 })
                 .catch(e => {
                     // RichEmbed for Time Up
