@@ -1,5 +1,6 @@
 /**
 * @from ZettaiBot
+* @type Latency check
 */
 
 exports.run = async (bot, message) => {

@@ -1,5 +1,6 @@
 /**
 * @from ZettaiBot
+* @type Testing file
 */
 
 // #############################################
@@ -16,6 +17,25 @@ const limit     = config.limit; // Size of the questions pool
 exports.run = async (bot, message, args) => {
     
     await message.delete();
+    
+    // Check if there's no argument or type INT, then return the list of quizz
+    if (fn.isEmpty(args) || isNaN(args)) {
+        var array = []
+        for (var i in quizz) {
+            array.push(`${i}. *${quizz[i].category}* - **${quizz[i].name}** by ${quizz[i].author}`);
+        }
+        
+        // RichEmbed for question list
+        const embed = new Discord.RichEmbed()
+        .setColor(color.info)
+        .setTitle(`**Quizz format *__texte__* **`)
+        .setDescription(array)
+        .addBlankField()
+        .addField(`**Pour lancer un quizz**`, `**!quizz** suivit d'un espace et du nombre voulu`, true);
+        
+        message.channel.send(embed);
+        return;
+    };
     
     // If there is an argumnt of type INT, we return the list of questions
     if (fn.isInteger(args)) {
@@ -41,13 +61,13 @@ exports.run = async (bot, message, args) => {
             const msg = m => m.content;
             let options = {
                 max: 1,
-                time: 2000,
+                time: 25000,
                 errors: ['time']
             };
             
             // RichEmbed for question asked
             const embed = new Discord.RichEmbed()
-            .setColor('#ffbb00')
+            .setColor(color.warning)
             .setTitle(hand[i].title);
             
             // Question delayed a little to prevent instant start
@@ -81,12 +101,13 @@ exports.run = async (bot, message, args) => {
                         .setTitle(`**Bravo !**`)
                         .setDescription(`La bonne réponse était **${deck[i].full}**`)
                         .setURL(deck[i].proof)
-                        .setFooter(`${collected.first().author.username}`, message.author.avatarURL);
+                        .setFooter(`${collected.first().author.username}`, collected.first().author.avatarURL);
                         
                         message.channel.send(embed);
                         return trigger = true;
                     }
                     // If the answer is wrong, do something
+                    
                 })
                 .catch(e => {
                     // RichEmbed for Time Up

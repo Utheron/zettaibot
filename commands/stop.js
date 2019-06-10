@@ -1,5 +1,6 @@
 /**
 * @from ZettaiBot
+* @type Stop Quizz command
 */
 
 // #############################################

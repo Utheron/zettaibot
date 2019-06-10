@@ -1,5 +1,6 @@
 /**
 * @from ZettaiBot
+* @type Kick command
 */
 
 exports.run = (bot, message, [mention, ...reason]) => {
