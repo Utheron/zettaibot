@@ -1,5 +1,6 @@
 /**
 * @from ZettaiBot
+* @type functions
 */
 
 module.exports = {
