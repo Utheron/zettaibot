@@ -128,7 +128,7 @@ exports.run = async (bot, message, args, guild) => {
                                 .setTitle(`**Bravo !**`)
                                 .setDescription(`La bonne réponse était **${deck[i].full}**`)
                                 .setURL(deck[i].proof)
-                                .setFooter(`${collected.first().author.username}`, message.author.avatarURL);
+                                .setFooter(`${collected.first().author.username}`, collected.first().author.avatarURL);
                                 
                                 message.channel.send(embed);
                                 return trigger = true;
