@@ -66,7 +66,7 @@ exports.run = async (bot, message, args) => {
             
             // RichEmbed for question asked
             const embed = new Discord.RichEmbed()
-            .setColor('#ffbb00')
+            .setColor(color.warning)
             .setTitle(hand[i].title);
             
             // Question delayed a little to prevent instant start
